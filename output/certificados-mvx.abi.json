@@ -1,0 +1,86 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.87.0",
+            "commitHash": "17067e9ac6d7ecb70e50f92c1944e545188d2359",
+            "commitDate": "2025-05-09",
+            "channel": "Stable",
+            "short": "rustc 1.87.0 (17067e9ac 2025-05-09)"
+        },
+        "contractCrate": {
+            "name": "certificados-mvx",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "multiversx-sc",
+            "version": "0.58.0"
+        }
+    },
+    "docs": [
+        "Smart contract sencillo para gestión de certificados.",
+        "Solo almacena el hash del PDF y la dirección de la wallet del alumno."
+    ],
+    "name": "CertificadosMvx",
+    "constructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "upgradeConstructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "docs": [
+                "Expide un nuevo certificado: almacena el hash y la dirección del alumno."
+            ],
+            "name": "expedir_certificado",
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "hash_certificado",
+                    "type": "bytes"
+                },
+                {
+                    "name": "direccion_alumno",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "docs": [
+                "Consulta si un certificado (por hash) es válido (existe en la blockchain)."
+            ],
+            "name": "es_certificado_valido",
+            "mutability": "readonly",
+            "inputs": [
+                {
+                    "name": "hash_certificado",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "Devuelve el listado de todos los hashes de certificados emitidos."
+            ],
+            "name": "listar_certificados",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "List<bytes>"
+                }
+            ]
+        }
+    ],
+    "esdtAttributes": [],
+    "hasCallback": false,
+    "types": {}
+}
