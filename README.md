@@ -8,3 +8,4 @@ Visita nuestra página en https://www.cfalayret.cat , si tienes un iaio o una ia
 esta es tu escuela, ambiente familiar en el mismo centro de la ciudad de Barcelona al ladito del Arco del Triumfo
 Ah! y gratis! somos escuela pública. Bueno la pagas pero de otra manera. Con tus impuestos.
 Saludos.
+https://youtu.be/nR8q-iYin5k
