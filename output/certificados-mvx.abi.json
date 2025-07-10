@@ -78,6 +78,21 @@
                     "type": "List<bytes>"
                 }
             ]
+        },
+        {
+            "name": "hashes_por_wallet",
+            "mutability": "readonly",
+            "inputs": [
+                {
+                    "name": "direccion_alumno",
+                    "type": "Address"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "List<bytes>"
+                }
+            ]
         }
     ],
     "esdtAttributes": [],

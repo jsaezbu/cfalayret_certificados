@@ -3,6 +3,7 @@
   "getNumArguments",
   "mBufferAppend",
   "mBufferAppendBytes",
+  "mBufferEq",
   "mBufferFinish",
   "mBufferGetArgument",
   "mBufferGetByteSlice",
