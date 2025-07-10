@@ -43,7 +43,18 @@ pub trait CertificadosMvx {
         }
         resultado
     }
-   
+    #[view]
+    fn hashes_por_wallet(&self, direccion_alumno: ManagedAddress) -> ManagedVec<ManagedBuffer> {
+        let mut resultado = ManagedVec::new();
+        for hash in self.hashes_emitidos().iter() {
+            let direccion = self.certificados(&hash).get();
+            if direccion == direccion_alumno {
+                resultado.push(hash);
+            }
+        }
+        resultado
+    }
+    
     
     /// Mapeo: hash del certificado -> dirección del alumno
     #[storage_mapper("certificados")]
